@@ -15,14 +15,14 @@ int main() {
     for (x=0;x<4;x++) {
         for (y=0;y<3;y++) {
             SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){(x*5)+10,y+3});
-            printf("%i",v[x][y]);
+            printf("%i",v[y][x]);
         }
     }
 
     for (y=0;y<4;y++) {
         for (x=0;x<3;x++) {
             SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){(x*5)+10,y+9});
-            printf("%i",v[y][x]);
+            printf("%i",v[x][y]);
         }
     }
 
